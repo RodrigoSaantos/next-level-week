@@ -1,0 +1,134 @@
+body {
+    background-color: white;
+}
+body::after {
+    content: '';
+    position: absolute;
+    background-color: #f0f0f5;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 16rem;
+    z-index: -1;
+
+}
+
+#page-search-results{
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+#page-search-results header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-search-results header a{
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+
+    text-align: center;
+}
+
+#page-search-results header a span{
+    margin-right: 16px;
+    background-image: url('../assets/arrow-left.svg');
+
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+}
+#page-search-results main header a button {
+    width: 50px;
+    height: 36px;
+    background-color: rgb(0, 0, 0, 0.08);
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 400ms;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 400ms;
+}
+
+#page-search-results main header a button:hover{
+    background-color: #2fb85e;
+}
+
+main{
+    margin: 48px;
+}
+
+main header {
+    display: flex;
+    justify-content: space-between;
+}
+#page-search-results main header a {
+    font-weight: normal;
+    align-items: center;
+    background: var(--primary-color);
+    border-radius: 8px;
+    padding-left: 20px;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+#page-search-results main header a:hover button {
+    background-color:#2fb85e;
+}
+
+main h4 {
+    font-weight: normal;
+
+    margin-bottom: 32px;
+}
+
+main .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+main .card img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 8px 8px 0 0;
+}
+
+main .card h1 {
+    margin: 32px 0;
+
+    font-size: 36px;
+    line-height: 41px;
+
+    color: #322153;
+} 
+
+main .card h3 {
+    margin: 24px 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+
+    color: var(--primary-color);
+}
+
+main .card p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6c6c80;
+}
+
